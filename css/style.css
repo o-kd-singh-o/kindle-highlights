@@ -1,0 +1,124 @@
+/* Main index page start */
+
+.box {
+    background-color: #FEFEFE;
+    margin: 5% 30%;
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.2);;
+}
+
+.bg {
+    background-color: #F3F7FD;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1.gap, h2.gap, h3.gap {
+    margin: 0px;
+}
+
+h3.normal {
+    font-weight: normal;
+}
+
+/* Main index page ends */
+
+
+/* Resume page starts */
+
+th {
+    text-align: left;
+    width: auto;
+    font-size:x-large;
+}
+
+.widthh{
+    width: auto;
+}
+
+.right {
+    text-align: right;
+    padding-right: 7px;
+}
+
+.bg-resume {
+    color: #414141; 
+    background-color: #FEFEFE;
+}
+
+.name{
+    font-size: 2.25rem;
+}
+
+.spacing {
+    margin: 0%;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .50;
+}
+
+.row{
+    margin: 0px;
+}
+
+.col-3 {
+    padding-top: 25px;
+    color: white; 
+    background-color: #414141;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 0px;
+}
+
+.pp{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Resume page ends */
+
+
+/* About Me page starts */
+
+.bg-about-me{
+    background-color: #727272;
+    color: white;
+    padding: 0%;
+    border: 0em;
+    margin: 0%;
+}
+
+.about-me-pp{
+    height: 300px;
+    width: 300px;
+}
+
+.img-about-me{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+.btn-about-me{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+/* About Me page ends */
