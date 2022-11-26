@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindle</title>
+</head>
+<body>
+    <div id="myData"></div>
+
+
+    <script>
+        // setInterval(myTimer, 1000);
+        
+        // function myTimer() {
+        //   const d = new Date();
+        //   document.getElementById("myData").innerHTML = d.toLocaleTimeString();
+        // }
+
+        fetch('people.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+        function appendData(data) {
+            var mainContainer = document.getElementById("myData");
+            for (var i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
+                mainContainer.appendChild(div);
+            }
+        }
+        alert("It is working!")
+    </script>
+</body>
+</html>
